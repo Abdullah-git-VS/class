@@ -1,0 +1,84 @@
+.main {
+  width: 40%;
+  box-shadow: 1px 1px 10px silver;
+  margin-top: 45px;
+  padding: 10px;
+  border-radius: 10px;
+}
+h2 {
+  font-family: "Cairo", sans-serif;
+}
+input {
+  margin-bottom: 10px;
+  width: 60%;
+  padding: 5px;
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+button {
+  border: none;
+  padding: 10px;
+  width: 40%;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #1ac15c;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  border-radius: 10px;
+}
+label {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #1f87cf;
+  font-family: "Cairo", sans-serif;
+  color: white;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: tomato;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+select {
+  margin-bottom: 10px;
+  width: 63%;
+  padding: 5px;
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-width:1.429px ;
+  border: 1.429px black solid;
+  border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  padding: 1px 0px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  padding-block: 1px;
+  padding-inline: 2px;
+
+}
