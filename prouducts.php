@@ -51,14 +51,14 @@
 
 <body>
     <nav calss="navbar">
-        <a id="aa" class="navbar-brand" href="index.php">Add Product | إضافة منتج</a>
+        <a id="aa" class="navbar-brand" href="register_customer.php">Add Product | إضافة منتج</a>
     </nav>
     <center>
         <h3>جميع المنتجات المتوفرة</h3>
     </center>
     <?php
     include('config.php');
-    $result = mysqli_query($con, "SELECT * FROM prod");
+    $result = mysqli_query($con, "SELECT * FROM products");
     while ($row = mysqli_fetch_array($result)) {
         echo "
         <center>

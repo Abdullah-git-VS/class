@@ -38,7 +38,7 @@
         <div class="main">
             <form action="" method="post" enctype="multipart/form-data" onSubmit="return validate();">
                 <h2>User Reg</h2>
-                <img src="" alt="logo" width="450px" id="ff">
+                <img src="" alt="logo" width="450px" id="preview">
                 <div class="second">
                     <br>
                     <input type="text" name='user' placeholder="user name">
@@ -59,11 +59,18 @@
                     <input type="date" name="birthday" id="bid">
                     <br>
 
-                    <input type="file" id="file" name='image' style='display: none;' onclick=" b();">
-                    <label for="file" onclick=" b();" >اختيار صورة للمنتج</label>
+                    <input type="file" id="file" name='image' style='display: none;' onchange="loadImage(event)" accept="image/*">
+                    <label for="file" onclick=" b();">اختيار صورة للمنتج</label>
                     <button type="submit" name='upload'>✅رفع المنتج</button>
                     <br><br>
                 </div>
+                <script>
+                    const loadImage = e => {
+                        const img = document.getElementById('preview');
+                        img.src = URL.createObjectURL(e.target.files[0]);
+                        img.style.display = 'block';
+                    };
+                </script>
                 <a href="prouducts.php">عرض المنتجات</a>
             </form>
         </div>
